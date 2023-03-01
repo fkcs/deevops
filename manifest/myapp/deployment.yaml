@@ -13,7 +13,7 @@ spec:
         app: myapp-dev
     spec:
       containers:
-      - image: registry.cn-shanghai.aliyuncs.com/public-namespace/myapp:v1
+      - image: registry.cn-shanghai.aliyuncs.com/public-namespace/myapp:v2
         name: myapp-dev
         ports:
         - containerPort: 80
