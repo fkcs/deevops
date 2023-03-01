@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - image: registry.cn-shanghai.aliyuncs.com/public-namespace/myapp:v1
-        name: myapp-test
+        name: myapp-dev
         ports:
         - containerPort: 80
