@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp-dev
+  template:
+    metadata:
+      labels:
+        app: myapp-dev
+    spec:
+      containers:
+      - image: registry.cn-shanghai.aliyuncs.com/public-namespace/myapp:v1
+        name: myapp-test
+        ports:
+        - containerPort: 80
